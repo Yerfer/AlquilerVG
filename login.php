@@ -1,7 +1,7 @@
 <?php
 
 	session_start();
-	$_SESSION[inicio_sesion]
+	$_SESSION["inicio_sesion"]=
 
 
 

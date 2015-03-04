@@ -9,7 +9,7 @@
 	</head>
 
 	<body>
-		<form method="post" action="procesar.php" autocomplete="on">
+		<form method="post" action="registroSQL.php" autocomplete="on">
 			<header name="superior" title="Sakura - Anime: Sakura Card Captor">
 				
 			</header>
@@ -46,17 +46,7 @@
 						</ul>
 					</fieldset>		
 				</div>
-				<?php
-					//conexion: 
-					$link = mysqli_connect("localhost","root","","videojuegos") or die("Error " . mysqli_error($link)); 
-					//consulta: 
-					$query = "SELECT * FROM videogame" or die("Error in the consult.." . mysqli_error($link)); 
-					//ejecutar consulta:
-					$result = mysqli_query($link, $query) or die("La consulta falló: " . mysqli_error($link));
-					//display information: 
-					
-						 	
-				?>
+				
 			</section>
 			
 			<aside name="derecho"> </aside>
