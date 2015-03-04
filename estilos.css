@@ -1,0 +1,164 @@
+header[name="superior"]{
+	width: 99%;
+	height: 250px;
+	border: 1px solid transparent;
+	margin-top: 1%;
+	background:	url(Esquema\\ikaros_header.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+
+#login{
+	float:left;
+	height: 80%;
+	width: 25%;
+	border: 1px solid transparent;
+	margin-top: 1px;
+	margin-left: 5%;
+}
+
+fieldset {
+border:6px groove #ccc; /* Borde */
+background:#F8ECE0; /* Color de fondo */
+color:#000; /* Color del texto de todo el contenido */
+}
+
+legend {
+text-align:left; /* Puedes cambiarlo por center o right */
+font-weight:bold; /* Estilo de la fuente del título */
+color:#61380B; /* Color del título */
+}
+
+aside[name="izquierdo"]{
+	float: left;
+	height: 1300px;
+	width: 15%;
+	border: 1px solid transparent;
+	margin-top: 3px;
+	background:	url(Esquema\\ubuntu1.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+
+aside[name="derecho"]{
+	float: left;
+	height: 1300px;
+	width: 15%;
+	border: 1px solid transparent;
+	margin-top: 3px;
+	background:	url(Esquema\\ubuntu2.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+
+section{
+	float: left;
+	height: 100%;
+	width: 68%;
+	border: solid 1px transparent;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 3px;
+	margin-bottom: 1%;
+}
+
+article{
+	float: left;
+	color:red;
+	height: 310px;
+	width: 22%;
+	border: solid 2px purple;
+	margin-left: 5px;
+	margin-top: 3px;
+	margin-bottom: 10px;
+}
+
+footer[name="pie"]{
+	float: left;
+	width: 99%;
+	height: 250px;
+	border: 1px solid transparent;
+	margin-top: 1%;
+	background:	url(Esquema\\yuno_header.jpg) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/*
+article[name="vg1"]{
+	background:	url(Covers\\batman_ps4.jpg) 0 0 no-repeat;
+	background-size: 100% 80%;
+}
+
+article[name="vg2"]{
+	background:	url(Covers\\crysis_pc.jpg) 0 0 no-repeat;
+	background-size: 100% 80%;
+}
+
+article[name="vg3"]{
+	background:	url(Covers\\assassinscreed2_360.jpg) 0 0 no-repeat;
+	background-size: 100% 80%;
+}
+
+article[name="vg4"]{
+	background:	url(Covers\\callofdutybo2_360.jpg) 0 0 no-repeat;
+	background-size: 100% 80%;
+}
+
+article[name="vg5"]{
+	background:	url(Covers\\dbzkinnect_360.jpg) 0 0 no-repeat;
+	background-size: 100% 80%;
+}
+
+article[name="vg6"]{
+	background:	url(Covers\\fallout3_pc.jpg) 0 0 no-repeat;
+	background-size: 100% 80%;
+}
+
+article[name="vg7"]{
+	background:	url(Covers\\fifa15_ps4.jpg) 0 0 no-repeat;
+	background-size: 100% 80%;
+}
+
+article[name="vg8"]{
+	background:	url(Covers\\finalfantasy13_360.jpg) 0 0 no-repeat;
+	background-size: 100% 80%;
+}
+
+article[name="vg9"]{
+	background:	url(Covers\\gta4_pc.jpg) 0 0 no-repeat;
+	background-size: 100% 80%;
+}
+
+article[name="vg10"]{
+	background:	url(Covers\\halo4_360.jpg) 0 0 no-repeat;
+	background-size: 100% 80%;
+}
+
+article[name="vg11"]{
+	background:	url(Covers\\mariogalaxy2_wii.jpg) 0 0 no-repeat;
+	background-size: 100% 80%;
+}
+
+article[name="vg12"]{
+	background:	url(Covers\\mariokart_wii.jpg) 0 0 no-repeat;
+	background-size: 100% 80%;
+}
+
+article[name="vg13"]{
+	background:	url(Covers\\needforspeedrivals_ps4.jpg) 0 0 no-repeat;
+	background-size: 100% 80%;
+}
+
+article[name="vg14"]{
+	background:	url(Covers\\callofdutyghost_ps4.png) 0 0 no-repeat;
+	background-size: 100% 80%;
+}
+
+article[name="vg15"]{
+	background:	url(Covers\\elchavo_wii.png) 0 0 no-repeat;
+	background-size: 100% 80%;
+}
+
+article[name="vg16"]{
+	background:	url(Covers\\godofwar2_pc.png) 0 0 no-repeat;
+	background-size: 100% 80%;
+}
+*/

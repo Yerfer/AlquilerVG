@@ -1,0 +1,68 @@
+header[name="superior"]{
+	width: 99%;
+	height: 250px;
+	border: 1px solid transparent;
+	margin-top: 1%;
+	background:	url(Esquema\\sakura2.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+
+#juego{
+	float:left;
+	height: 100%;
+	width: 50%;
+	border: 1px solid transparent;
+	margin-top: 1px;
+	margin-left: 20%;
+	margin-right:20%;
+}
+
+video{
+	float: left;
+	height: 100%;
+	width: 100%;
+	border: 1px solid red;
+	margin: 0 auto;
+}
+
+section{
+	float: left;
+	height: 100%;
+	width: 68%;
+	border: solid 1px transparent;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 3px;
+	margin-bottom: 1%;
+}
+
+aside[name="izquierdo"]{
+	float: left;
+	height: 1300px;
+	width: 15%;
+	border: 1px solid transparent;
+	margin-top: 3px;
+	background:	url(Esquema\\ubuntu1.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+
+aside[name="derecho"]{
+	float: right;
+	height: 1300px;
+	width: 15%;
+	border: 1px solid transparent;
+	margin-top: 3px;
+	background:	url(Esquema\\ubuntu2.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+
+
+footer[name="pie"]{
+	float: left;
+	width: 99%;
+	height: 250px;
+	border: 1px solid transparent;
+	margin-top: 1%;
+	background:	url(Esquema\\yuno_header.jpg) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
