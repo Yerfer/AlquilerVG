@@ -64,8 +64,10 @@
 					$i=0;
 					while($row = mysqli_fetch_array($result)) { 
 						echo "
-							<article name='vg".($i+1)."' title='".$row["descripcion"]."    Stock:".$row["stock"]."'>
-								<img height=80% width=100% src='".$row["imagen"]."'/>
+							<article name='vg".($i+1)."' title='".$row["descripcion"]."    Stock:".$row["stock"]."'>							
+								<form action='vg_individual.php'> 
+								<input name='vg".($i+1)."'  src='".$row["imagen"]."' height=80% width=100% type='image' />  //ARREGLAR ESTA PARTE
+								</form>
 								Precio por Día:".$row["precio_dia"]."<br/>
 								Consola:".$row["consola"]."<br/>
 								<input name='vg".($i+1)."' type='checkbox' value='vg".($i+1)."' />".$row["nombre"]."
