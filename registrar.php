@@ -9,7 +9,7 @@
 	</head>
 
 	<body>
-		<form method="post" action="registroSQL.php" autocomplete="on">
+		
 			<header name="superior" title="Sakura - Anime: Sakura Card Captor">
 				
 			</header>
@@ -17,6 +17,9 @@
 			<aside name="izquierdo"></aside>
 		
 			<section> 
+			
+			<form method="post" action="registroSQL.php" autocomplete="on">
+			
 				<div id="registro">		
 					<fieldset>
 						<legend>Datos de Contacto</legend>
@@ -27,19 +30,15 @@
 							</li>
 							<li>
 								<label for="cedula">Cedula</label>
-								<input type="number" name="cedula" id="cedula" placeholder="1111111" autofocus="autofocus" required="required"  min="1" maxlength="15" />
-							</li>
-							<li>
-								<label for="telefono">Teléfono</label>
-								<input type="number" name="telefono" id="telefono" placeholder="5555555" autofocus="autofocus" required="required"  min="1" maxlength="15" />
+								<input type="number" name="cedula" id="cedula" placeholder="1111111" required="required"  min="1" maxlength="15" />
 							</li>
 							<li>
 								<label for="pass">Password</label>
-								<input type="password" name="pass" id="pass" placeholder="****" autofocus="autofocus" required="required"  min="1" maxlength="15" />
+								<input type="password" name="pass" id="pass" placeholder="****"  required="required"  min="6" maxlength="15" />
 							</li>
 							<li>
-								<label for="pass2">Re-Password</label>
-								<input type="password" name="pass2" id="pass2" placeholder="****" autofocus="autofocus" required="required"  min="1" maxlength="15" />
+								<label for="telefono">Teléfono</label>
+								<input type="number" name="telefono" id="telefono" placeholder="5555555"  required="required"  min="1" maxlength="15" />
 							</li>
 							<input type="submit" name="registrar" value="Registrar" />
 							<input type="reset" name="reiniciar" value="Reiniciar">
@@ -47,13 +46,15 @@
 					</fieldset>		
 				</div>
 				
+			</form>
+			
 			</section>
 			
 			<aside name="derecho"> </aside>
 	
 			<footer name="pie">	</footer>
 
-		</form>
+		
 
 	</body>
 
