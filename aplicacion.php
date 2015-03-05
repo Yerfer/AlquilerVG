@@ -54,9 +54,9 @@
 						echo "
 							<article name='vg".($i+1)."' title='".$row["descripcion"]."    Stock:".$row["stock"]."'>
 								<img height=80% width=100% src='".$row["imagen"]."'/>
-								Precio por Día:".$row["precio_dia"]."<br/>
-								Consola:".$row["consola"]."<br/>
-								<input name='vg".($i+1)."' type='checkbox' value='vg".($i+1)."' />".$row["nombre"]."
+								Precio por Día: ".$row["precio_dia"]."<br/>
+								Consola: ".$row["consola"]."<br/>
+								Nombre: ".$row["nombre"]."
 							</article>  ";
 						$i++;
 					}	 	

@@ -9,7 +9,7 @@
 	</head>
 
 	<body>
-		<form method="post" action="login.php" autocomplete="on">
+		<form method="post" action="procesar.php" autocomplete="on">
 			<header name="superior" title="Ikaros - Anime: Sora no Otoshimono">
 				<div id="login">		
 					<fieldset>
@@ -22,9 +22,10 @@
 							} 
 							else {
 						?>
-								<div id="welcome">
+								<div id="bienvenido">
 								<h2>Bienvenido, <span><?php echo $_SESSION['session_username'];?>! </span></h2>
-								<p><a href="logout.php">Finalice</a> sesión aquí!</p>
+								<input type="submit" name="apartar" value="Apartar" href="procesar.php">
+								<p><a href="logout.php">Cerrar Sesión</a></p>
 								</div>
 								<?php
 							}

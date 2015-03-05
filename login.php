@@ -32,6 +32,7 @@
 			
 				if($cedula == $dbcedula && $password == $dbpass){
 					$_SESSION['session_username']=$row['nombre'];
+					$_SESSION['session_cedula']=$cedula;
 					//echo "Hola: ".$row['nombre'];
 					header("Location: aplicacionlogin.php");
 				}
