@@ -25,7 +25,10 @@
 							</li>
 							<input type="submit" name="login" value="LOGIN" />
 							<input type="reset" name="reiniciar" value="Reiniciar">
+<<<<<<< HEAD
 							<p>No estas registrado? <a href="registrar.php" >Registrate Aquí</a>!</p>
+=======
+>>>>>>> 66059ba9aad6f6d6aeb10abb90ae97d30732313a
 						</ul>
 					</fieldset>	
 				</div>
