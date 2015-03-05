@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 
+<?php
+	session_start();
+	if(isset($_SESSION["session_username"])){
+		header("Location: aplicacionlogin.php");
+	}
+?>
+
 <html lang="es">
 
 	<head>
@@ -9,19 +16,19 @@
 	</head>
 
 	<body>
-		<form method="post" action="procesar.php" autocomplete="on">
+		<form method="post" action="login.php" autocomplete="on">
 			<header name="superior" title="Ikaros - Anime: Sora no Otoshimono">
 				<div id="login">		
 					<fieldset>
 						<legend>Datos de Contacto</legend>
 						<ul>
 							<li>
-								<label for="nombre">Nombre</label>
-								<input type="text" name="nombre" id="nombre" placeholder="Pepito" autofocus="autofocus" required="required" maxlength="40" />
+								<label for="cedula">Cedula</label>
+								<input type="number" name="cedula" id="cedula" placeholder="123456" autofocus="autofocus" required="required" min="1" maxlength="40" />
 							</li>
 							<li>
 								<label for="pass">Password</label>
-								<input type="password" name="pass" id="pass" placeholder="****" autofocus="autofocus" required="required"  min="1" maxlength="15" />
+								<input type="password" name="pass" id="pass" placeholder="****"  required="required"  min="1" maxlength="15" />
 							</li>
 							<input type="submit" name="login" value="LOGIN" />
 							<input type="reset" name="reiniciar" value="Reiniciar">
