@@ -38,7 +38,32 @@
 				</div>
 			</header>
 	
-			<aside name="izquierdo"></aside>
+			<aside name="izquierdo">
+			
+				<?php
+					//conexion: 
+					$link = mysqli_connect("localhost","root","","videojuegos") or die("Error " . mysqli_error($link)); 
+					//consulta: 
+					$query = "SELECT * FROM categoria" or die("Error in the consult.." . mysqli_error($link)); 
+					//ejecutar consulta:
+					$result = mysqli_query($link, $query) or die("La consulta falló: " . mysqli_error($link));
+					//display information: 
+					$i=0;
+					
+					echo "<ul><h2>CATEGORIA <h2>";			
+					
+					while($row = mysqli_fetch_array($result)) { 
+						echo "							
+							<li>
+								<label name='categoria '>".$row["nombre"]."</label>
+							</li>
+							";
+						$i++;
+					}	 
+					echo "</ul>";
+				?>			
+				
+			</aside>
 		
 			<section> 
 				<?php

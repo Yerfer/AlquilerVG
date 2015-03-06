@@ -47,16 +47,45 @@
 				</div>
 			</header>
 	
-			<aside name="izquierdo"></aside>
+			<aside name="izquierdo">
+			
+				<?php
+					//conexion: 
+					$link = mysqli_connect("localhost","root","","videojuegos") or die("Error " . mysqli_error($link)); 
+					//consulta: 
+					$query = "SELECT * FROM categoria" or die("Error en la consulta" . mysqli_error($link)); 
+					//ejecutar consulta:
+					$result = mysqli_query($link, $query) or die("La consulta falló: " . mysqli_error($link));
+					//display information: 
+					$i=0;
+					
+					echo "<ul><h2>CATEGORIA <h2>";			
+					
+					
+					while($row = mysqli_fetch_array($result)) { 
+					$nombrecate=$row["nombre"];
+					$idcate=$row["id_categoria"];
+						echo "							
+							<li>
+								<href='aplicacionfiltro.php' input='submit' name=categoria value='$idcate'>
+							</li>
+							";
+						$i++;
+					}
+					echo " <li><a href='aplicacionlogin.php' method='post' name=categoria value='' >VISTA GENERAL</a> </li>";
+					echo "</ul>";
+				?>			
+				
+			</aside>
 		
 			<section> 
 				<?php
 					//conexion: 
 					$link = mysqli_connect("localhost","root","","videojuegos") or die("Error " . mysqli_error($link)); 
 					//consulta: 
-					$query = "SELECT * FROM videogame" or die("Error in the consult.." . mysqli_error($link)); 
+					$consulta = "SELECT * FROM videogame" or die("Error in the consult.." . mysqli_error($link)); 
 					//ejecutar consulta:
-					$result = mysqli_query($link, $query) or die("La consulta falló: " . mysqli_error($link));
+					$result = mysqli_query($link, $consulta) or die("La consulta falló: " . mysqli_error($link));
 					//display information: 
 					$i=0;
 					while($row = mysqli_fetch_array($result)) { 

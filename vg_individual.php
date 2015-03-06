@@ -34,8 +34,13 @@
 						$descripcion=$row["descripcion"];
 						$precio_dia=$row["precio_dia"];
 						$stock=$row["stock"];
-						$video="Esquema\\Videos\\DBZ.avi";
-							
+						$video=$row["video"];						
+						$id_categoria=$row["id_categoria"];
+						$consulta="select nombre from categoria where id_categoria='".$id_categoria."'";
+						$cate= mysqli_query($link, $consulta) or die("La consulta falló: " . mysqli_error($link));
+						$fila_categoria = mysqli_fetch_array($cate);
+						$categoria=$fila_categoria["nombre"];
+						
 						echo "							
 						<form method='post' action='procesar.php'>
 						<section name='juego'> 
@@ -53,7 +58,7 @@
 									<p>Precio: $precio_dia</p>
 									<input type='submit' name='vg".$id_vj."' value='Alquilar' />
 									<p>$descripcion</p>
-									<p>Categorias: lllll, oooooo, pppppp</p>
+									<p>Categoria: $categoria</p>
 								</footer>
 							</section>
 						</section>
