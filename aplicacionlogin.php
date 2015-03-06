@@ -29,7 +29,14 @@
 								</div>
 								<?php
 							}
+<<<<<<< HEAD
 						?>						
+=======
+						?>
+
+						
+						
+>>>>>>> 3d59a466b17ea190fc73b19e2add43ab83ddcc5a
 						<!--<ul>
 							<li>
 								<label for="cedula">Cedula</label>
@@ -47,6 +54,7 @@
 				</div>
 			</header>
 	
+<<<<<<< HEAD
 			<aside name="izquierdo">
 			
 				<?php
@@ -77,22 +85,36 @@
 				?>			
 				
 			</aside>
+=======
+			<aside name="izquierdo"></aside>
+>>>>>>> 3d59a466b17ea190fc73b19e2add43ab83ddcc5a
 		
 			<section> 
 				<?php
 					//conexion: 
 					$link = mysqli_connect("localhost","root","","videojuegos") or die("Error " . mysqli_error($link)); 
 					//consulta: 
+<<<<<<< HEAD
 					$consulta = "SELECT * FROM videogame" or die("Error in the consult.." . mysqli_error($link)); 
 					//ejecutar consulta:
 					$result = mysqli_query($link, $consulta) or die("La consulta falló: " . mysqli_error($link));
+=======
+					$query = "SELECT * FROM videogame" or die("Error in the consult.." . mysqli_error($link)); 
+					//ejecutar consulta:
+					$result = mysqli_query($link, $query) or die("La consulta falló: " . mysqli_error($link));
+>>>>>>> 3d59a466b17ea190fc73b19e2add43ab83ddcc5a
 					//display information: 
 					$i=0;
 					while($row = mysqli_fetch_array($result)) { 
 						echo "
 							<article name='vg".($i+1)."' title='".$row["descripcion"]."    Stock:".$row["stock"]."'>							
+<<<<<<< HEAD
 								<form action='vg_individual.php' method='post' > 
 								<input name='juegos' value='".($i+1)."' src='".$row["imagen"]."' height=240px width=100% type='image' /> 
+=======
+								<form action='vg_individual.php'> 
+								<input name='vg".($i+1)."'  src='".$row["imagen"]."' height=80% width=100% type='image' />  //ARREGLAR ESTA PARTE
+>>>>>>> 3d59a466b17ea190fc73b19e2add43ab83ddcc5a
 								</form>
 								Precio por Día:".$row["precio_dia"]."<br/>
 								Consola:".$row["consola"]."<br/>
